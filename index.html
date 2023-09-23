@@ -1,0 +1,102 @@
+<html>
+<head>
+<title> Kalkulator </title>
+<link rel="icon" href="icon.png">
+<script src="calculator.js">
+</script>
+<style type="text/css">
+
+    #calc {
+        width: 440px;
+        height: 200px;
+        margin: auto;
+    }
+
+    .LabelDiv {
+        background-color: white;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        height: 80px;
+        border: solid;
+        border-width: 6px;
+        border-color: #101010;
+    }
+
+    .Label {
+        margin: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 40px;
+        font-family: 'Verdana';
+        display: flex;
+        align-items: center;
+    }
+
+    input.Button {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Verdana';
+        border: solid;
+        border-width: 5px;
+        border-color: #999999;
+        background-color: #505050;
+        color: #888888;
+        cursor: pointer;
+    }
+
+    input.Button:hover {
+        background-color: #bcbcbc;
+    }
+    input.Button:active {
+        background-color: #505050;
+    }
+
+</style>
+</head>
+<body bgcolor="#363636">
+
+    <div id="calc">
+        <div class="LabelDiv">
+            <p class="Label" id="label">0</p>
+        </div>
+        <br>
+
+        <input type="button" class="Button" onclick='keyClick("del");' id="del" value = "C">
+        <input type="button" class="Button" onclick='keyClick("modulo");' id="modulo" value = "%">
+        <input type="button" class="Button" onclick='keyClick("sqrt");' id="sqrt" value = "√">
+        <input type="button" class="Button" onclick='keyClick("back");' id="back" value = "<">
+        <div style="clear: both;"></div>
+
+        <input type="button" class="Button" onclick='keyClick("key7");' id="key7" value = 7>
+        <input type="button" class="Button" onclick='keyClick("key8");' id="key8" value = 8>
+        <input type="button" class="Button" onclick='keyClick("key9");' id="key9" value = 9>
+        <input type="button" class="Button" onclick='keyClick("plus");' id="plus" value = "+">
+        <div style="clear: both;"></div>
+    
+        <input type="button" class="Button" onclick='keyClick("key4");' id="key4" value = 4>
+        <input type="button" class="Button" onclick='keyClick("key5");' id="key5" value = 5>
+        <input type="button" class="Button" onclick='keyClick("key6");' id="key6" value = 6>
+        <input type="button" class="Button" onclick='keyClick("minus");' id="minus" value = "-">
+        <div style="clear: both;"></div>
+    
+        <input type="button" class="Button" onclick='keyClick("key1");' id="key1" value = 1>
+        <input type="button" class="Button" onclick='keyClick("key2");' id="key2" value = 2>
+        <input type="button" class="Button" onclick='keyClick("key3");' id="key3" value = 3>
+        <input type="button" class="Button" onclick='keyClick("times");' id="times" value = "x">
+        <div style="clear: both;"></div>
+
+        <input type="button" class="Button" onclick='keyClick("equals");' id="equals" value = "=">
+        <input type="button" class="Button" onclick='keyClick("key0");' id="key0" value = 0>
+        <input type="button" class="Button" onclick='keyClick("dot");' id="dot" value = ".">
+        <input type="button" class="Button" onclick='keyClick("divide");' id="divide" value = "/">
+        <div style="clear: both;"></div>
+    </div>
+
+</body>
+</html>
